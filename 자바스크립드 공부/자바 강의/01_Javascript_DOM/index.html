@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1> heading 1</h1>
+  <script>
+    console.log('hello js')
+    // let키워드
+    let number = 10 //let이란 함수가 지금 부터 변수 선언 할께
+    console.log(number) // 라고 말하는 것임
+    number = 20
+    console.log(number)
+
+    // conset 키워드
+    const number1 = 10
+    console.log('const', number1) // 얘는 재할당이 불가능함
+    // number1 = 20
+    // console.log(number1) // 이렇게 했을 때 20이라고 안뜸.
+    // block scope 
+    // -중괄호({}) 안에서 let, const로 선언한 변수는 
+    let x = 1
+    if(x==1){
+      let x = 2
+      console.log('in', x) // 블록안에 코드
+    }
+    console.log('out',x) // 바깥에 코드임
+  </script>
+</body>
+</html>
